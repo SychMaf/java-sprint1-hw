@@ -6,10 +6,10 @@ public class Converter {
         km=constToKM;
         kCall=constToKCall;
     }
-    void ConvertToDist(double step){
-        System.out.println("Пройденное расстояние (км) = " + (step*km)/100000);
+    double ConvertToDist(double step){
+        return  (step*km)/100000;
     }
-    void ConvertToKCall(double step){
-        System.out.println("Количество соженных килокалорий = " + step * kCall);
+    double ConvertToKCall(double step){
+        return step * kCall;
     }
 }
